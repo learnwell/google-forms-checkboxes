@@ -6,6 +6,12 @@
     >
     <mat-card>
       {{question.question}}
+      <!-- https://material.angular.io/components/list/overview#selection-lists -->
+      <mat-selection-list #answers>
+        <mat-list-option *ngFor="let option of question.options">
+          {{option.answer}}
+        </mat-list-option>
+      </mat-selection-list>
     </mat-card>
   </div>
 </div>
