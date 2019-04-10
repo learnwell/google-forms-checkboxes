@@ -11,7 +11,7 @@
     git remote add origin git@github.com:learnwell/google-forms-checkboxes.git
     git push -u origin master
     ```
-1. Configure angular-material in one fell swoop: `ng add @angular/material`
+1. Configured angular-material in one fell swoop: `ng add @angular/material`
 
     ```
     $ ng add @angular/material
@@ -32,3 +32,4 @@
     UPDATE src/index.html (489 bytes)
     UPDATE src/styles.css (181 bytes)
     ```
+1. Added common material components and made sure basic material styled designs show up
