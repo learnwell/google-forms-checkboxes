@@ -1,7 +1,11 @@
-<div 
-  *ngFor="let question of questions; let i = index"
+<div
+  fxLayout="column" fxLayoutGap="20px"
   >
-  <mat-card>
-    {{question.question}}
-  </mat-card>
+  <div 
+    *ngFor="let question of questions; let i = index"
+    >
+    <mat-card>
+      {{question.question}}
+    </mat-card>
+  </div>
 </div>

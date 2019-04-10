@@ -1,9 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { MaterialModule } from './material.module';
 import { CheckboxesComponent } from './checkboxes/checkboxes.component';
 
@@ -15,6 +15,7 @@ import { CheckboxesComponent } from './checkboxes/checkboxes.component';
   imports: [
     BrowserModule
     ,BrowserAnimationsModule
+    ,FlexLayoutModule
     ,MaterialModule
   ],
   providers: [],
