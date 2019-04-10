@@ -5,15 +5,19 @@
     *ngFor="let question of questions; let i = index"
     >
     <mat-card>
-      {{question.question}}
-      <mat-selection-list>
-        <mat-list-option
-          *ngFor="let option of question.options"
-          [selected]="option.correct"
-          >
-          {{option.answer}}
-        </mat-list-option>
-      </mat-selection-list>
+      <mat-card-title>
+        {{question.question}}
+      </mat-card-title>
+      <mat-card-content>
+        <mat-selection-list>
+          <mat-list-option
+            *ngFor="let option of question.options"
+            [selected]="option.correct"
+            >
+            {{option.answer}}
+          </mat-list-option>
+        </mat-selection-list>
+      </mat-card-content>
     </mat-card>
   </div>
 </div>
