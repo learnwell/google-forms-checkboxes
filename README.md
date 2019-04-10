@@ -36,3 +36,5 @@
 1. Used [mat-card](https://material.angular.io/components/card/overview) with [flex-layout](https://github.com/angular/flex-layout) for displaying dummy data.
 1. Used [mat-selection-list](https://material.angular.io/components/list/overview#selection-lists) for displaying available answers.
 1. Arrange the content neatly into [basic card sections](https://material.angular.io/components/card/overview#basic-card-sections)
+1. Added basic drag-&-drop functionality for questions by following angular CDK's example on [reordering lists](https://material.angular.io/cdk/drag-drop/overview#reordering-lists)
+    * The dependencies for the CDK had already been installed in a previous step when we used a [schematic](https://material.angular.io/guide/schematics) to add material via: `ng add @angular/material`
