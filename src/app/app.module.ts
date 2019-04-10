@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MaterialModule } from 'src/app/material.module';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
