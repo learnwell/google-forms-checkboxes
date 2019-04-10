@@ -33,3 +33,5 @@
     UPDATE src/styles.css (181 bytes)
     ```
 1. Added common material components and made sure basic material styled designs show up
+1. Used [mat-card](https://material.angular.io/components/card/overview) with [flex-layout](https://github.com/angular/flex-layout) for displaying dummy data.
+1. Used [mat-selection-list](https://material.angular.io/components/list/overview#selection-lists) for displaying available answers.
