@@ -40,3 +40,41 @@
     * The dependencies for the CDK had already been installed in a previous step when we used a [schematic](https://material.angular.io/guide/schematics) to add material via: `ng add @angular/material`
 1. Selected a material icon and added it as a [handle](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-area-using-a-handle) for dragging & dropping.
 1. Laid out the `drag_indicator` and question text on top of each other like a column and centered them.
+
+# Conventions
+
+1. Place any `mat*` directives inline with starting element tag
+
+    ```
+    <element mat-blah>
+      ...
+    <element>
+    ```
+1. Place any `cdk*` directives in the 1st line right after the starting element tag
+
+    ```
+    <element mat-blah
+      cdk-blah
+      >
+      ...
+    <element>
+    ```
+1. Place any flex-layout directive in the 2nd line after the starting element tag
+    ```
+    <element mat-blah
+      cdk-blah
+      fxLayout="column"
+      >
+      ...
+    <element>
+    ```
+1. Place any structural directives in the 3rd line after the starting element tag
+    ```
+    <element mat-blah
+      cdk-blah
+      fxLayout="column"
+      *ngFor="let blah of blahs; let i = index"
+      >
+      ...
+    <element>
+    ```

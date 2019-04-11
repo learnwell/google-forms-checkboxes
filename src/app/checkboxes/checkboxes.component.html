@@ -1,8 +1,9 @@
 <div
-  fxLayout="column" fxLayoutGap="20px"
   cdkDropList
+  fxLayout="column" fxLayoutGap="20px"
   >
-  <div cdkDrag
+  <div
+    cdkDrag
     *ngFor="let question of questions; let i = index"
     >
     <mat-card>
