@@ -4,3 +4,7 @@
  * Sizing and coloring are also available
  * in the later part of the article linked above.
  */
+
+ .rotate-90 {
+    -webkit-transform: rotate(90deg);
+  }

@@ -40,6 +40,7 @@
     * The dependencies for the CDK had already been installed in a previous step when we used a [schematic](https://material.angular.io/guide/schematics) to add material via: `ng add @angular/material`
 1. Selected a material icon and added it as a [handle](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-area-using-a-handle) for dragging & dropping.
 1. Laid out the `drag_indicator` and question text on top of each other like a column and centered them.
+1. Rotated the icon for a more familiar look-&-feel, which is closer to what people see in google forms usually.
 
 # Conventions
 
