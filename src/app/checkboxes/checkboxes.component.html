@@ -7,10 +7,14 @@
     >
     <mat-card>
       <mat-card-title>
-        <button mat-icon-button cdkDragHandle>
-          <mat-icon>drag_indicator</mat-icon>
-        </button>
-        {{question.question}}
+        <div fxLayout="column" fxLayoutAlign="center center">
+          <button mat-icon-button
+            cdkDragHandle
+            >
+            <mat-icon>drag_indicator</mat-icon>
+          </button>
+          {{question.question}}
+        </div>
       </mat-card-title>
       <mat-card-content>
         <mat-selection-list>
