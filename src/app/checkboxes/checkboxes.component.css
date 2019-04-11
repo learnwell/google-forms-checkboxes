@@ -8,3 +8,10 @@
 .rotate-90 {
   -webkit-transform: rotate(90deg);
 }
+
+.example-custom-placeholder {
+  background: #ccc;
+  border: dotted 3px #999;
+  min-height: 200px;
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}

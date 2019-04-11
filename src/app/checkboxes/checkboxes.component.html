@@ -6,6 +6,12 @@
     cdkDrag
     *ngFor="let question of questions; let i = index"
     >
+    <!-- DRAG PLACEHOLDER -->
+    <div
+      *cdkDragPlaceholder
+      class="example-custom-placeholder"
+      >
+    </div>
 
     <!-- DRAG PREVIEW -->
     <mat-card *cdkDragPreview>
