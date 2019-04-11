@@ -22,6 +22,7 @@
       </mat-card-title>
     </mat-card>
 
+    <!-- ANSWER KEY MODE-->
     <mat-card>
       <mat-card-title>
         <div fxLayout="column" fxLayoutAlign="center center">
@@ -34,6 +35,7 @@
           {{question.question}}
         </div>
       </mat-card-title>
+
       <mat-card-content>
         <mat-selection-list>
           <mat-list-option
@@ -44,6 +46,16 @@
           </mat-list-option>
         </mat-selection-list>
       </mat-card-content>
+
+      <mat-card-actions>
+        <!-- Edit Question Toggle - show when in Answer Key mode -->
+        <button mat-button color="accent">
+          <mat-icon>
+            check_box
+          </mat-icon>
+          EDIT QUESTION
+        </button>
+      </mat-card-actions>
     </mat-card>
   </div>
 </div>
