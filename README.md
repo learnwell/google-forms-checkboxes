@@ -41,6 +41,7 @@
 1. Selected a material icon and added it as a [handle](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-area-using-a-handle) for dragging & dropping.
 1. Laid out the `drag_indicator` and question text on top of each other like a column and centered them.
 1. Rotated the icon for a more familiar look-&-feel, which is closer to what people see in google forms usually.
+1. Fixed the drag & drop which was missing the binding to a function to act on the "drop" event.
 
 # Conventions
 
