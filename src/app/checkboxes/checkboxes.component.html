@@ -14,9 +14,12 @@
     </div>
 
     <!-- DRAG PREVIEW -->
-    <mat-card *cdkDragPreview>
+    <mat-card
+      *cdkDragPreview>
       <mat-card-title>
-        <div fxLayout="column" fxLayoutAlign="center center">
+        <div
+          fxLayout="column" fxLayoutAlign="center center"
+          >
           <button mat-icon-button
             cdkDragHandle
             class="rotate-90"
@@ -31,7 +34,9 @@
     <!-- ANSWER KEY MODE-->
     <mat-card>
       <mat-card-title>
-        <div fxLayout="column" fxLayoutAlign="center center">
+        <div
+          fxLayout="column" fxLayoutAlign="center center"
+          >
           <button mat-icon-button
             cdkDragHandle
             class="rotate-90"
@@ -56,9 +61,7 @@
       <mat-card-actions>
         <!-- Edit Question Toggle - show when in Answer Key mode -->
         <button mat-button color="accent">
-          <mat-icon>
-            check_box
-          </mat-icon>
+          <mat-icon>check_box</mat-icon>
           EDIT QUESTION
         </button>
       </mat-card-actions>
