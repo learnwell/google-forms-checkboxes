@@ -86,7 +86,7 @@
       >
       <mat-card-title>
         <div
-          fxLayout="column" fxLayoutAlign="center center"
+          fxLayout="column" fxLayoutAlign="center stretch"
           >
           <button mat-icon-button
             cdkDragHandle
@@ -94,10 +94,14 @@
             >
             <mat-icon>drag_indicator</mat-icon>
           </button>
-          <textarea matInput
-            [(ngModel)]="question.question"
-            >
-          </textarea>
+          <mat-form-field>
+            <textarea matInput
+              cdkTextareaAutosize cdkAutosizeMinRows="3" cdkAutosizeMaxRows="6"
+              [(ngModel)]="question.question"
+              #autosize="cdkTextareaAutosize"
+              >
+            </textarea>
+          </mat-form-field>
         </div>
       </mat-card-title>
 

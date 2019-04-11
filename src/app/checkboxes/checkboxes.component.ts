@@ -1,6 +1,13 @@
 import {
-  Component
+  Component,
+  NgZone, ViewChild
 } from '@angular/core';
+
+import {
+  CdkTextareaAutosize
+} from '@angular/cdk/text-field';
+
+import {take} from 'rxjs/operators';
 
 import {
   CdkDragDrop, moveItemInArray
@@ -59,6 +66,19 @@ export class CheckboxesComponent {
       ]
     }
   ];
+
+  constructor(private ngZone: NgZone) { }
+ 
+  /**
+   * Automatically resizing a <textarea>
+   * https://material.angular.io/cdk/text-field/overview
+   */
+  @ViewChild('autosize') autosize: CdkTextareaAutosize;
+  triggerResize() {
+    // Wait for changes to be applied, then trigger textarea resize.
+    this.ngZone.onStable.pipe(take(1))
+        .subscribe(() => this.autosize.resizeToFitContent(true));
+  }
 
   onQuestionDrop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.questions, event.previousIndex, event.currentIndex);

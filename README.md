@@ -48,6 +48,10 @@
 1. Locked drag direction in the y-plane (up & down only).
 1. Add a [markdown renderer](https://github.com/jfcere/ngx-markdown#ngx-markdown) for questions so that we have something that's an upgrade from what other websites currently offer us!
 1. Toggle between answer key and edit question modes. Only one question should be in edit mode at any given time.
+1. Styled the textarea to work well for single-line questions AND multi-line questions.
+    * Used flex-layout to `stretch` and provide maximum horizontal area to the textarea.
+    * Used [cdkTextareaAutosize](https://material.angular.io/cdk/text-field/overview) for autosizing.
+    * Wrapped in `mat-form-field` for all the material benefits.
 
 # Conventions
 
