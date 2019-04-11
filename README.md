@@ -42,6 +42,7 @@
 1. Laid out the `drag_indicator` and question text on top of each other like a column and centered them.
 1. Rotated the icon for a more familiar look-&-feel, which is closer to what people see in google forms usually.
 1. Fixed the drag & drop which was missing the binding to a function to act on the "drop" event.
+1. Added a [drag preview](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-preview) which is smaller than the full body and offers a better experience when moving it around.
 
 # Conventions
 
