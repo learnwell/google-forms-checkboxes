@@ -6,14 +6,15 @@
     cdkDrag cdkDragLockAxis="y"
     *ngFor="let question of questions; let i = index"
     >
-    <!-- DRAG PLACEHOLDER -->
+    <!-- BEGIN: DRAG PLACEHOLDER -->
     <div
       *cdkDragPlaceholder
       class="example-custom-placeholder"
       >
     </div>
+    <!-- END: DRAG PLACEHOLDER -->
 
-    <!-- DRAG PREVIEW -->
+    <!-- BEGIN: DRAG PREVIEW -->
     <mat-card
       *cdkDragPreview
       >
@@ -35,8 +36,9 @@
         </div>
       </mat-card-title>
     </mat-card>
+    <!-- END: DRAG PREVIEW -->
 
-    <!-- ANSWER KEY MODE-->
+    <!-- BEGIN: ANSWER KEY MODE-->
     <mat-card
       *ngIf="i!==editingIndex"
       >
@@ -79,6 +81,7 @@
         </button>
       </mat-card-actions>
     </mat-card>
+    <!-- END: ANSWER KEY MODE-->
 
     <!-- BEGIN: EDIT QUESTION MODE-->
     <mat-card
