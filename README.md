@@ -47,6 +47,7 @@
 1. Added a [drag placeholder](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-placeholder) to serve as a visual cue for where the dropped item will go.
 1. Locked drag direction in the y-plane (up & down only).
 1. Add a [markdown renderer](https://github.com/jfcere/ngx-markdown#ngx-markdown) for questions so that we have something that's an upgrade from what other websites currently offer us!
+1. Toggle between answer key and edit question modes. Only one question should be in edit mode at any given time.
 
 # Conventions
 

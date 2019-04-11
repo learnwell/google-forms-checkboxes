@@ -12,6 +12,7 @@ import {
   styleUrls: ['./checkboxes.component.css']
 })
 export class CheckboxesComponent {
+  editingIndex: number;
   questions = [
     {
       question: 'What is `blah`?',
