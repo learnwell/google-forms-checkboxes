@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
+import { MarkdownModule } from 'ngx-markdown';
+
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { CheckboxesComponent } from './checkboxes/checkboxes.component';
@@ -18,6 +20,7 @@ import { CheckboxesComponent } from './checkboxes/checkboxes.component';
     ,BrowserAnimationsModule
     ,DragDropModule
     ,FlexLayoutModule
+    ,MarkdownModule.forRoot() // must stay in root
     ,MaterialModule
   ],
   providers: [],

@@ -27,7 +27,11 @@
             >
             <mat-icon>drag_indicator</mat-icon>
           </button>
-          {{question.question}}
+          <markdown
+            class="viewing-markdown"
+            [data]="question.question"
+            >
+          </markdown>
         </div>
       </mat-card-title>
     </mat-card>
@@ -44,7 +48,11 @@
             >
             <mat-icon>drag_indicator</mat-icon>
           </button>
-          {{question.question}}
+          <markdown
+            class="viewing-markdown"
+            [data]="question.question"
+            >
+          </markdown>
         </div>
       </mat-card-title>
 
