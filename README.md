@@ -38,3 +38,4 @@
 1. Arrange the content neatly into [basic card sections](https://material.angular.io/components/card/overview#basic-card-sections)
 1. Added basic drag-&-drop functionality for questions by following angular CDK's example on [reordering lists](https://material.angular.io/cdk/drag-drop/overview#reordering-lists)
     * The dependencies for the CDK had already been installed in a previous step when we used a [schematic](https://material.angular.io/guide/schematics) to add material via: `ng add @angular/material`
+1. Selected a material icon and added it as a [handle](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-area-using-a-handle) for dragging & dropping.
