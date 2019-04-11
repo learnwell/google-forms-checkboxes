@@ -45,6 +45,7 @@
 1. Added a [drag preview](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-preview) which is smaller than the full body and offers a better experience when moving it around.
 1. We are in *ANSWER KEY* mode right now so added a button in [mat-card-actions](https://material.angular.io/components/card/overview#basic-card-sections) to indicate that a user can toggle to *EDIT QUESTION* mode. Nothing is wired yet.
 1. Added a [drag placeholder](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-placeholder) to serve as a visual cue for where the dropped item will go.
+1. Locked drag direction in the y-plane (up & down only).
 
 # Conventions
 
