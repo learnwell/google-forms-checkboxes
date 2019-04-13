@@ -54,6 +54,7 @@
     * Wrapped in `mat-form-field` for all the material benefits.
 1. Added [hot module reloading](https://github.com/angular/angular-cli/wiki/stories-configure-hmr) in hopes that it will speed up development.
 1. Added the answer choices as editable text when in *Edit Question* mode.
+1. Enhanced editable answer choices with a `drag_indicator` icon via [`matListIcon`](https://material.angular.io/components/list/overview#lists-with-icons).
 
 # Conventions
 

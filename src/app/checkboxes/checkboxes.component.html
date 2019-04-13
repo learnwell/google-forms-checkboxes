@@ -114,6 +114,7 @@
         <mat-list-item
           *ngFor="let option of question.options"
           >
+          <mat-icon matListIcon>drag_indicator</mat-icon>
           <mat-form-field role="listitem">
             <input matInput [(ngModel)]="option.answer">
           </mat-form-field>
