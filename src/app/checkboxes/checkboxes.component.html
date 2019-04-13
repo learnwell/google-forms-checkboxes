@@ -118,7 +118,11 @@
           >
           <mat-icon matListIcon>drag_indicator</mat-icon>
           <mat-form-field role="listitem">
-            <input matInput [(ngModel)]="option.answer">
+            <textarea matInput
+              cdkTextareaAutosize cdkAutosizeMinRows="1" cdkAutosizeMaxRows="6"
+              [(ngModel)]="option.answer"
+              >
+            </textarea>
           </mat-form-field>
         </mat-list-item>
       </mat-list>

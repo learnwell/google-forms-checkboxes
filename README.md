@@ -56,6 +56,7 @@
 1. Added the answer choices as editable text when in *Edit Question* mode.
 1. Enhanced editable answer choices with a `drag_indicator` icon via [`matListIcon`](https://material.angular.io/components/list/overview#lists-with-icons).
 1. Added drag-&-drop capability for answer choices.
+1. Added a textarea for editing answers in *Edit Question* mode.
 
 # Conventions
 
