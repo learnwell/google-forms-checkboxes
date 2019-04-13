@@ -108,6 +108,18 @@
         </div>
       </mat-card-title>
 
+      <mat-list
+        role="list"
+        >
+        <mat-list-item
+          *ngFor="let option of question.options"
+          >
+          <mat-form-field role="listitem">
+            <input matInput [(ngModel)]="option.answer">
+          </mat-form-field>
+        </mat-list-item>
+      </mat-list>
+
       <mat-card-actions>
         <!-- Answer Key Toggle - show when in Answer Key mode -->
         <button mat-button color="accent"
