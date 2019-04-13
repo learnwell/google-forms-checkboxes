@@ -30,6 +30,14 @@
             "es5BrowserSupport": true
           },
           "configurations": {
+            "hmr": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.hmr.ts"
+                }
+              ]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -62,6 +70,10 @@
             "browserTarget": "google-forms-checkboxes:build"
           },
           "configurations": {
+            "hmr": {
+              "hmr": true,
+              "browserTarget": "google-forms-checkboxes:build:hmr"
+            },
             "production": {
               "browserTarget": "google-forms-checkboxes:build:production"
             }

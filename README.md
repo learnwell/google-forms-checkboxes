@@ -52,6 +52,7 @@
     * Used flex-layout to `stretch` and provide maximum horizontal area to the textarea.
     * Used [cdkTextareaAutosize](https://material.angular.io/cdk/text-field/overview) for autosizing.
     * Wrapped in `mat-form-field` for all the material benefits.
+1. Added [hot module reloading](https://github.com/angular/angular-cli/wiki/stories-configure-hmr) in hopes that it will speed up development.
 
 # Conventions
 
