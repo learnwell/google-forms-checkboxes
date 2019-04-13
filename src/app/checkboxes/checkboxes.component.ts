@@ -83,4 +83,8 @@ export class CheckboxesComponent {
   onQuestionDrop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.questions, event.previousIndex, event.currentIndex);
   }
+
+  onAnswerDrop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(event.item.data, event.previousIndex, event.currentIndex);
+  }
 }

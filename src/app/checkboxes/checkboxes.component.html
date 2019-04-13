@@ -109,9 +109,11 @@
       </mat-card-title>
 
       <mat-list
+        cdkDropList (cdkDropListDropped)="onAnswerDrop($event)"
         role="list"
         >
         <mat-list-item
+          cdkDrag cdkDragLockAxis="y" [cdkDragData]="question.options"
           *ngFor="let option of question.options"
           >
           <mat-icon matListIcon>drag_indicator</mat-icon>
