@@ -111,6 +111,7 @@
       <mat-list
         cdkDropList (cdkDropListDropped)="onAnswerDrop($event)"
         role="list"
+        class="adjust-height"
         >
         <mat-list-item
           cdkDrag cdkDragLockAxis="y" [cdkDragData]="question.options"
