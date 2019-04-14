@@ -59,6 +59,7 @@
 1. Added a textarea for editing answers in *Edit Question* mode.
 1. Overrode material styles with higher [CSS specificity](https://github.com/angular/material2/issues/8707#issuecomment-348654115) to resize the material list when textarea resizing occurs.
 1. Removed [unneccesary code](https://github.com/angular/material2/issues/15813) that does nothing when resizing textarea.
+1. The `drag_indicator` should continue to be [centered](https://github.com/angular/flex-layout/wiki/fxFlexAlign-API), even in *Edit Question* mode.
 
 # Conventions
 
