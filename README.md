@@ -61,6 +61,7 @@
 1. Removed [unneccesary code](https://github.com/angular/material2/issues/15813) that does nothing when resizing textarea.
 1. The `drag_indicator` for questions should continue to be [centered](https://github.com/angular/flex-layout/wiki/fxFlexAlign-API), even in *Edit Question* mode.
 1. Fixed `drag_indicator` for answers with the missing `cdkDragHandle` directive.
+1. Use `flex-layout` instead of CSS shortcuts like `.example-full-width {width: 100%;}` to layout the editable answers such that they take up all of the remaining width.
 
 # Conventions
 

@@ -122,7 +122,9 @@
             >
             drag_indicator
           </mat-icon>
-          <mat-form-field role="listitem">
+          <mat-form-field role="listitem"
+            fxFlex
+            >
             <textarea matInput
               cdkTextareaAutosize cdkAutosizeMinRows="1" cdkAutosizeMaxRows="6"
               [(ngModel)]="option.answer"
