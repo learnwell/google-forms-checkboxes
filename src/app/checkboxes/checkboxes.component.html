@@ -117,7 +117,11 @@
           cdkDrag cdkDragLockAxis="y" [cdkDragData]="question.options"
           *ngFor="let option of question.options"
           >
-          <mat-icon matListIcon>drag_indicator</mat-icon>
+          <mat-icon matListIcon
+            cdkDragHandle
+            >
+            drag_indicator
+          </mat-icon>
           <mat-form-field role="listitem">
             <textarea matInput
               cdkTextareaAutosize cdkAutosizeMinRows="1" cdkAutosizeMaxRows="6"
