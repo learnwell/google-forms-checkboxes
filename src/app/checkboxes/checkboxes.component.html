@@ -61,12 +61,17 @@
       </mat-card-title>
 
       <mat-card-content>
-        <mat-selection-list>
+        <mat-selection-list
+          class="adjust-height"
+          >
           <mat-list-option
             *ngFor="let option of question.options"
             [selected]="option.correct"
             >
-            {{option.answer}}
+            <markdown
+              [data]="option.answer"
+              >
+            </markdown>
           </mat-list-option>
         </mat-selection-list>
       </mat-card-content>
