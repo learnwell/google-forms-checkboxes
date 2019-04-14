@@ -64,6 +64,14 @@
 1. Use `flex-layout` instead of CSS shortcuts like `.example-full-width {width: 100%;}` to layout the editable answers such that they take up all of the remaining width.
 1. Added markdown renderer for answers in *Answer Key* mode. Updated layout to accommodate markdown rendering for multi-line answers.
 
+# Roadmap
+1. Updated drag-drop such that something that was being edited but was dagged-&-dropped, continues to be in the edited state.
+1. In *Edit Question* mode, don't show real checkboxes only empty checkbox on the left of the textfield
+1. If a question is clicked (this could be anywhere within the markdown renderer's area) switch to *EDIT QUESTION* mode and show a textarea for editing the question's text.
+1. add toolbar w/ button for adding new questions
+1. when moving a box that was in answer key mode the preview should be in the Answer Key mode too
+1. when moving a box that was in Edit Question mode the preview should be in the Edit Question mode too BUT options should not show
+
 # Conventions
 
 1. Place any `mat*` directives inline with starting element tag
