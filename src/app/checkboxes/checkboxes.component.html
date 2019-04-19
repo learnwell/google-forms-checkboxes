@@ -131,8 +131,24 @@
           </div>
           <!-- END: DRAG PLACEHOLDER -->
 
+          <!-- BEGIN: DRAG PREVIEW -->
+          <mat-card
+            *cdkDragPreview
+            fxLayout="column" fxLayoutAlign="center center"
+            >
+            <mat-icon class="rotate-90">drag_indicator</mat-icon>
+            <markdown
+              [data]="option.answer"
+              lineNumbers
+              >
+            </markdown>
+          </mat-card>
+          <!-- END: DRAG PREVIEW -->
+
+          <!-- START: Editable Answers -->
           <mat-icon matListIcon
             cdkDragHandle
+            class="grabbable"
             >
             drag_indicator
           </mat-icon>
@@ -145,6 +161,8 @@
               >
             </textarea>
           </mat-form-field>
+          <!-- END: Editable Answers -->
+
         </mat-list-item>
       </mat-list>
 

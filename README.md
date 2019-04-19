@@ -72,6 +72,10 @@
 1. Added a [drag placeholder](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-placeholder) to serve as a visual cue for where the dropped answers will go. This becomes very useful for managing multi-line answers.
     * Don't restrict dragging to the `cdkDragLockAxis="y"` axis anymore because it feels more difficult to work with, when ordering answers.
     * Added mock data for multiline answers to demonstrate usage.
+1. Added a [drag preview](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-preview) which offers a better experience when moving answers around.
+    * Updated the `cursor` to look the part during drag-&-drop
+        * Screencast of curious observations made during development are available [here](https://youtu.be/HvUNoS5_W9w).
+        * CSS Demo: [cursor](CSS Demo: cursor)
 
 # Roadmap
 1. Consume data via an injected service that implements an interface dictate by the component so that developers can tieup with their preffered backend.
