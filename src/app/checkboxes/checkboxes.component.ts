@@ -35,7 +35,17 @@ export class CheckboxesComponent {
       `,
       options:[
         {answer:'code', correct: false}
-        ,{answer:'programming', correct: true}
+        ,{answer:`programming
+
+          \`\`\`
+          import { Component, OnInit }
+          from '@angular/core';
+          import {CdkDragDrop, moveItemInArray}
+          from '@angular/cdk/drag-drop';
+          \`\`\`
+          `,
+          correct: true
+        }
         ,{answer:'OOP', correct: true}
         ,{answer:'functional', correct: false}
       ]

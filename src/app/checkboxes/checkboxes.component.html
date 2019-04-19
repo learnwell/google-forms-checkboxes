@@ -9,7 +9,7 @@
     <!-- BEGIN: DRAG PLACEHOLDER -->
     <div
       *cdkDragPlaceholder
-      class="example-custom-placeholder"
+      class="question-placeholder"
       >
     </div>
     <!-- END: DRAG PLACEHOLDER -->
@@ -120,9 +120,17 @@
         class="adjust-height"
         >
         <mat-list-item
-          cdkDrag cdkDragLockAxis="y" [cdkDragData]="question.options"
+          cdkDrag [cdkDragData]="question.options"
           *ngFor="let option of question.options"
           >
+          <!-- BEGIN: DRAG PLACEHOLDER -->
+          <div
+            *cdkDragPlaceholder
+            class="answer-placeholder"
+            >
+          </div>
+          <!-- END: DRAG PLACEHOLDER -->
+
           <mat-icon matListIcon
             cdkDragHandle
             >

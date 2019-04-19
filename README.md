@@ -69,9 +69,11 @@
 1. Added markdown renderer for answers in *Answer Key* mode. Updated layout to accommodate markdown rendering for multi-line answers.
 1. Enabled the `lineNumbers` directive for code blocks in rendered markdown.
     * A screencast of configuration challenges can be found [here](https://youtu.be/Ou4hVM6FXbY).
+1. Added a [drag placeholder](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-placeholder) to serve as a visual cue for where the dropped answers will go. This becomes very useful for managing multi-line answers.
+    * Don't restrict dragging to the `cdkDragLockAxis="y"` axis anymore because it feels more difficult to work with, when ordering answers.
+    * Added mock data for multiline answers to demonstrate usage.
 
 # Roadmap
-1. Add a [drag placeholder](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-placeholder) to serve as a visual cue for where the dropped answers will go. This becomes very useful for managing multi-line answers.
 1. Consume data via an injected service that implements an interface dictate by the component so that developers can tieup with their preffered backend.
 1. Componentize this so that it can be simply dropped into angular projects and reused. 
 1. Updated drag-drop such that something that was being edited but was dagged-&-dropped, continues to be in the edited state.
