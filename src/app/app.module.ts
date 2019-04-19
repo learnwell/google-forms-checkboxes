@@ -11,6 +11,25 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { CheckboxesComponent } from './checkboxes/checkboxes.component';
 
+import "prismjs"; //import "prismjs/prism";
+import "prismjs/plugins/line-numbers/prism-line-numbers.js";
+
+/**
+ ## For typescript syntax highlighting
+ # app.module.ts
+ import "prismjs/components/prism-typescript.min.js";
+
+ ## For javascript syntax highlighting
+ # app.module.ts
+ import "prismjs/components/prism-javascript.min.js";
+ 
+ ## For line highlighting
+ # app.module.ts
+ import "prismjs/plugins/line-highlight/prism-line-highlight.js";
+ # angular.json
+ ,"node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css"
+ */
+
 @NgModule({
   declarations: [
     AppComponent

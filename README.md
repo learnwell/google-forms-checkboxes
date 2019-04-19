@@ -67,6 +67,8 @@
 1. Fixed `drag_indicator` for answers with the missing `cdkDragHandle` directive.
 1. Use `flex-layout` instead of CSS shortcuts like `.example-full-width {width: 100%;}` to layout the editable answers such that they take up all of the remaining width.
 1. Added markdown renderer for answers in *Answer Key* mode. Updated layout to accommodate markdown rendering for multi-line answers.
+1. Enabled the `lineNumbers` directive for code blocks in rendered markdown.
+    * A screencast of configuration challenges can be found [here](https://youtu.be/Ou4hVM6FXbY).
 
 # Roadmap
 1. Add a [drag placeholder](https://material.angular.io/cdk/drag-drop/overview#customizing-the-drag-placeholder) to serve as a visual cue for where the dropped answers will go. This becomes very useful for managing multi-line answers.
