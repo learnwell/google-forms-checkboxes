@@ -1,0 +1,139 @@
+    <!-- BEGIN: ANSWER KEY MODE-->
+    <mat-card
+      *ngIf="!edit"
+      >
+      <mat-card-title>
+        <div
+          fxLayout="column" fxLayoutAlign="center center"
+          >
+          <button mat-icon-button
+            cdkDragHandle
+            class="rotate-90"
+            >
+            <mat-icon>drag_indicator</mat-icon>
+          </button>
+          <markdown
+            [data]="poll.question"
+            lineNumbers
+            >
+          </markdown>
+        </div>
+      </mat-card-title>
+
+      <mat-card-content>
+        <mat-selection-list
+          class="adjust-height"
+          >
+          <mat-list-option
+            *ngFor="let option of poll.options"
+            [selected]="option.correct"
+            >
+            <markdown
+              [data]="option.answer"
+              lineNumbers
+              >
+            </markdown>
+          </mat-list-option>
+        </mat-selection-list>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <!-- Edit Question Toggle - show when in Answer Key mode -->
+        <button mat-button color="accent"
+          (click)="edit=!edit"
+          >
+          <mat-icon>check_box</mat-icon>
+          EDIT QUESTION
+        </button>
+      </mat-card-actions>
+    </mat-card>
+    <!-- END: ANSWER KEY MODE-->
+
+    <!-- BEGIN: EDIT QUESTION MODE-->
+    <mat-card
+      *ngIf="edit"
+      >
+      <mat-card-title>
+        <div
+          fxLayout="column" fxLayoutAlign="center stretch"
+          >
+          <button mat-icon-button
+            fxFlexAlign="center"
+            cdkDragHandle
+            class="rotate-90"
+            >
+            <mat-icon>drag_indicator</mat-icon>
+          </button>
+          <mat-form-field>
+            <textarea matInput
+              cdkTextareaAutosize cdkAutosizeMinRows="3" cdkAutosizeMaxRows="6"
+              [(ngModel)]="poll.question"
+              >
+            </textarea>
+          </mat-form-field>
+        </div>
+      </mat-card-title>
+
+      <mat-list
+        cdkDropList (cdkDropListDropped)="onAnswerDrop($event)"
+        role="list"
+        class="adjust-height"
+        >
+        <mat-list-item
+          cdkDrag [cdkDragData]="poll.options"
+          *ngFor="let option of poll.options"
+          >
+          <!-- BEGIN: DRAG PLACEHOLDER -->
+          <div
+            *cdkDragPlaceholder
+            class="answer-placeholder"
+            >
+          </div>
+          <!-- END: DRAG PLACEHOLDER -->
+
+          <!-- BEGIN: DRAG PREVIEW -->
+          <mat-card
+            *cdkDragPreview
+            fxLayout="column" fxLayoutAlign="center center"
+            >
+            <mat-icon class="rotate-90">drag_indicator</mat-icon>
+            <markdown
+              [data]="option.answer"
+              lineNumbers
+              >
+            </markdown>
+          </mat-card>
+          <!-- END: DRAG PREVIEW -->
+
+          <!-- START: Editable Answers -->
+          <mat-icon matListIcon
+            cdkDragHandle
+            class="grabbable"
+            >
+            drag_indicator
+          </mat-icon>
+          <mat-form-field role="listitem"
+            fxFlex
+            >
+            <textarea matInput
+              cdkTextareaAutosize cdkAutosizeMinRows="1" cdkAutosizeMaxRows="6"
+              [(ngModel)]="option.answer"
+              >
+            </textarea>
+          </mat-form-field>
+          <!-- END: Editable Answers -->
+
+        </mat-list-item>
+      </mat-list>
+
+      <mat-card-actions>
+        <!-- Answer Key Toggle - show when in Answer Key mode -->
+        <button mat-button color="accent"
+          (click)="edit=!edit"
+          >
+          <mat-icon>check_box</mat-icon>
+          ANSWER KEY
+        </button>
+      </mat-card-actions>
+    </mat-card>
+    <!-- END: EDIT QUESTION MODE-->

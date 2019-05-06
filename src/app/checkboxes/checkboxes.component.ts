@@ -6,6 +6,16 @@ import {
   CdkDragDrop, moveItemInArray
 } from '@angular/cdk/drag-drop';
 
+export interface Poll {
+  question: string;
+  options: Array<AnswerKey>
+}
+
+export interface AnswerKey {
+  answer: string;
+  correct?: boolean;
+}
+
 @Component({
   selector: 'app-checkboxes',
   templateUrl: './checkboxes.component.html',
@@ -74,9 +84,5 @@ export class CheckboxesComponent {
 
   onQuestionDrop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.questions, event.previousIndex, event.currentIndex);
-  }
-
-  onAnswerDrop(event: CdkDragDrop<string[]>) {
-    moveItemInArray(event.item.data, event.previousIndex, event.currentIndex);
   }
 }

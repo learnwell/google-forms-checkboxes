@@ -13,6 +13,7 @@ import { CheckboxesComponent } from './checkboxes/checkboxes.component';
 
 import "prismjs"; //import "prismjs/prism";
 import "prismjs/plugins/line-numbers/prism-line-numbers.js";
+import { CheckboxComponent } from './checkboxes/checkbox/checkbox.component';
 
 /**
  ## For typescript syntax highlighting
@@ -33,7 +34,7 @@ import "prismjs/plugins/line-numbers/prism-line-numbers.js";
 @NgModule({
   declarations: [
     AppComponent
-    ,CheckboxesComponent
+    ,CheckboxesComponent, CheckboxComponent
   ],
   imports: [
     BrowserModule
