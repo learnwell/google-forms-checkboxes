@@ -76,6 +76,8 @@
     * Updated the `cursor` to look the part during drag-&-drop
         * Screencast of curious observations made during development are available [here](https://youtu.be/HvUNoS5_W9w).
         * CSS Demo: [cursor](CSS Demo: cursor)
+1. Populate data from firebase backend via angularfire client.
+    * Requires `firebaseConfig{...}` to be configured in `environment.*.ts` file(s) to function.
 
 # Roadmap
 1. Consume data via an injected service that implements an interface dictate by the component so that developers can tieup with their preffered backend.

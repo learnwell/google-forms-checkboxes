@@ -5,11 +5,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
 import { MarkdownModule } from 'ngx-markdown';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { CheckboxesComponent } from './checkboxes/checkboxes.component';
+import { QuestionBankService } from './question-bank.service';
+
+import { environment } from '../environments/environment';
 
 import "prismjs"; //import "prismjs/prism";
 import "prismjs/plugins/line-numbers/prism-line-numbers.js";
@@ -36,6 +42,8 @@ import "prismjs/plugins/line-numbers/prism-line-numbers.js";
     ,CheckboxesComponent
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
     BrowserModule
     ,BrowserAnimationsModule
     ,DragDropModule
@@ -44,7 +52,9 @@ import "prismjs/plugins/line-numbers/prism-line-numbers.js";
     ,MarkdownModule.forRoot() // must stay in root
     ,MaterialModule
   ],
-  providers: [],
+  providers: [
+    QuestionBankService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
