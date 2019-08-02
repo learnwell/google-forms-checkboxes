@@ -79,6 +79,7 @@
 1. Populate data from firebase backend via angularfire client.
     * Requires `firebaseConfig{...}` to be configured in `environment.*.ts` file(s) to function.
 1. Update to Angular 8.
+1. Used `ngx-mathjax` for mathematical and chemical equations in rendered markdown.
 
 # Roadmap
 1. Consume data via an injected service that implements an interface dictate by the component so that developers can tieup with their preffered backend.

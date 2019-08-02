@@ -9,6 +9,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { MarkdownModule } from 'ngx-markdown';
+import {MathJaxModule} from 'ngx-mathjax';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
@@ -51,6 +52,11 @@ import "prismjs/plugins/line-numbers/prism-line-numbers.js";
     ,FormsModule
     ,MarkdownModule.forRoot() // must stay in root
     ,MaterialModule
+    ,MathJaxModule.config(true, {
+      version: '2.7.5',
+      config: 'TeX-AMS_HTML',
+      hostname: 'cdnjs.cloudflare.com'
+    })
   ],
   providers: [
     QuestionBankService

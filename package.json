@@ -28,6 +28,7 @@
     "firebase": "^6.3.4",
     "hammerjs": "^2.0.8",
     "ngx-markdown": "^8.1.0",
+    "ngx-mathjax": "0.0.9",
     "prismjs": "1.17.1",
     "rxjs": "~6.5.2",
     "tslib": "^1.10.0",
