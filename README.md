@@ -78,6 +78,7 @@
         * CSS Demo: [cursor](CSS Demo: cursor)
 1. Populate data from firebase backend via angularfire client.
     * Requires `firebaseConfig{...}` to be configured in `environment.*.ts` file(s) to function.
+1. Update to Angular 8.
 1. Used `ngx-mathjax` for mathematical and chemical equations in rendered markdown.
 
 # Roadmap
